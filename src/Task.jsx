@@ -58,7 +58,7 @@ function NewTodo({ onAdd }) {
     return (
         <>
             <input value={text} onChange={e => setText(e.target.value)} />
-            <button onClick={handleAddClick} disabled={error}>Add</button>
+            <button onClick={handleAddClick} disabled={error}>Ajouter</button>
             {error && <p className="error-message">Please enter a task</p>}
         </>
     );

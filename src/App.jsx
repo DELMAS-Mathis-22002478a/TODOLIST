@@ -10,6 +10,7 @@ export default function TodoList() {
     const [visibleTodos, setVisibleTodos] = useState([]);
     const [footer, setFooter] = useState(null);
 
+
     useEffect(() => {
         setActiveTodos(todos.filter(todo => !todo.completed));
     }, [todos]);
@@ -87,7 +88,8 @@ function NewTodo({ onAdd }) {
     return (
         <>
             <input value={text} onChange={e => setText(e.target.value)} />
-            <button onClick={handleAddClick}>Add</button>
+            <button onClick={handleAddClick} disabled={!text.trim()}>Ajouter</button>
+
         </>
     );
 }

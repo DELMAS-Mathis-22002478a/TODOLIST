@@ -1,3 +1,13 @@
+div#root {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+
+ul{
+    padding: 0!important;
+}
 
 li{
     width: 100%;
@@ -24,7 +34,7 @@ li{
 .text-and-input{
     align-items: center;
     display: flex;
-    margin-left: 40px;
+
     gap: 10px;
 }
 
@@ -39,5 +49,5 @@ li{
 
 .footer {
     display: flex;
-    margin-left: 40px;
+
 }
